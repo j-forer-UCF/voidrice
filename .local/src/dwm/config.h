@@ -214,16 +214,22 @@ static Key keys[] = {
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY,			XK_b,		togglebar,	{0} },
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_Up,		spawn,		SHCMD("xbacklight -inc 1 -steps 1 -time 1") },
-	{ MODKEY,			XK_Down,		spawn,		SHCMD("xbacklight -dec 1 -steps 1 -time 1") },
+	/*{ MODKEY,			XK_Up,		spawn,		SHCMD("xbacklight -inc 1 -steps 1 -time 1") },*/
+	{ MODKEY,			XK_Up,		spawn,		SHCMD("~/Documents/Scripts/brightness_up.zsh") },
+	/*{ MODKEY,			XK_Down,		spawn,		SHCMD("xbacklight -dec 1 -steps 1 -time 1") },*/
+	{ MODKEY,			XK_Down,		spawn,		SHCMD("~/Documents/Scripts/brightness_down.zsh") },
 	{ MODKEY,			XK_n,		spawn,		SHCMD(TERMINAL " -e nvim -c VimwikiIndex") },
 	{ MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD(TERMINAL " -e newsboat; pkill -RTMIN+6 dwmblocks") },
 	{ MODKEY,			XK_m,		spawn,		SHCMD(TERMINAL " -e ncmpcpp") },
 	{ MODKEY|ShiftMask,		XK_m,		spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
-	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
-	{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc seek 0%") },
-	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
-	{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("mpc repeat") },
+	/*{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },*/
+	/*{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc seek 0%") },*/
+	/*{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },*/
+	/*{ MODKEY|ShiftMask,		XK_period,	spawn,		SHCMD("mpc repeat") },*/
+	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
 	{ MODKEY,			XK_Left,	focusmon,	{.i = -1 } },
 	{ MODKEY|ShiftMask,		XK_Left,	tagmon,		{.i = -1 } },
