@@ -15,11 +15,13 @@ alias grepi='grep -i'
 alias p3='python3'
 alias ucfvpn='sudo openconnect ucfvpn-1.vpn.ucf.edu'
 alias mendeleev='ssh -Y josh@10.173.158.162'
+alias maria='ssh -Y josh@10.173.161.12'
+alias agent='eval `ssh-agent` && ssh-add'
 
 
 # -- Environmental Variables
 MENDELEEV="josh@10.173.158.162"
-VIVALDI="josh@75.74.27.148"
+MARIA="josh@10.173.161.12"
 
 # History in cache directory:
 HISTSIZE=10000000

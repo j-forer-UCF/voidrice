@@ -259,6 +259,7 @@ static Key keys[] = {
 
 	{ 0,				XK_Print,	spawn,		SHCMD("maim $HOME/Pictures/Screenshots/pic-full-$(date '+%y%m%d-%H%M-%S').png") },
 	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maim -s $HOME/Pictures/Screenshots/pic-selected-$(date '+%y%m%d-%H%M-%S').png") },
+	{ ShiftMaski|ControlMask,			XK_Print,	spawn,		SHCMD("maim -s | xclip -selection clipboard -t image/png") },
 	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
 	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("dmenurecord kill") },
 	{ MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },

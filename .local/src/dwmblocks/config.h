@@ -14,14 +14,14 @@ static const Block blocks[] = {
 	/* {"",	"price eth Ethereum 🍸",	9000,	23}, */
 	/* {"",	"price btc Bitcoin 💰",				9000,	21}, */
 	/* {"",	"torrent",	20,	7}, */
-	/* {"",	"memory",	10,	14}, */
-	/* {"",	"cpu",		10,	18}, */
+	 {"",	"memory",	10,	14},
+	 {"",	"cpu",		10,	18},
 	/* {"",	"moonphase",	18000,	17}, */
 	{"",	"forecast",	18000,	5},
 	{"",	"mailbox",	180,	12},
 	{"",	"nettraf",	1,	16},
 	{"",	"volume",	0,	10},
-	{"",	"battery",	5,	3},
+	/*{"",	"battery",	5,	3},*/
 	{"",	"clock",	60,	1},
 	{"",	"internet",	5,	4},
 	{"",	"help-icon",	0,	15},

@@ -163,7 +163,7 @@ set tags=tags
 
 " == Markdown stuff ==
 
-autocmd FileType markdown inoremap :p <lt>p><lt>/p><Esc>3hi
+autocmd FileType markdown inoremap ;p <lt>p><lt>/p><Esc>3hi
 
 " == LaTeX stuff ==
 
@@ -171,48 +171,48 @@ autocmd FileType tex noremap <Space><Space> /(<>)<CR>3xr\s
 
 " -- Symbols --
 
-autocmd FileType tex inoremap	:R 		 \rm I \!R
-autocmd FileType tex inoremap	:C 		 \mathbb{C}
-autocmd FileType tex inoremap	:q 		 \quad
-autocmd FileType tex inoremap	:qq		 \qq
-autocmd FileType tex inoremap	:vd    \vdots
-autocmd FileType tex inoremap	:cd		 \cdots
-autocmd FileType tex inoremap	:dd 	 \ddots
-autocmd FileType tex inoremap :int   \int\limits_{  }^{(<>)}<Esc>8hi
-autocmd FileType tex inoremap :sum   \sum\limits_{  }^{(<>)}<Esc>8hi
+autocmd FileType tex inoremap	;R 		 \rm I \!R
+autocmd FileType tex inoremap	;C 		 \mathbb{C}
+autocmd FileType tex inoremap	;q 		 \quad
+autocmd FileType tex inoremap	;qq		 \qq
+autocmd FileType tex inoremap	;vd    \vdots
+autocmd FileType tex inoremap	;cd		 \cdots
+autocmd FileType tex inoremap	;dd 	 \ddots
+autocmd FileType tex inoremap ;int   \int\limits_{  }^{(<>)}<Esc>8hi
+autocmd FileType tex inoremap ;sum   \sum\limits_{  }^{(<>)}<Esc>8hi
 
 
 " -- Environments --
 
-autocmd FileType tex inoremap :item  \begin{itemize}<Enter><Tab>\item<Enter><BS>\end{itemize}<Esc>kA<Space>
-autocmd FileType tex inoremap :enum  \begin{enumerate}[(<>)]<Enter><Tab>\item (<>)<Enter><BS>\end{enumerate}<Esc>2k
-autocmd FileType tex inoremap :eq 	 \begin{equation}<CR><CR>\end{equation}<Esc>kI<Tab>
-autocmd FileType tex inoremap :eqs 	 \begin{equation*}<CR><Tab><CR><BS>\end{equation*}<Esc>kA<Space>
-autocmd FileType tex inoremap :ga 	 \begin{gather}<CR><CR>\end{gather}<Esc>kI<Tab>
-autocmd FileType tex inoremap :gas 	 \begin{gather*}<CR><CR>\end{gather*}<Esc>kI<Tab>
-autocmd FileType tex inoremap :al 	 \begin{align}<CR><CR>\end{align}<Esc>kI<Tab>
-autocmd FileType tex inoremap :als 	 \begin{align*}<CR><CR>\end{align*}<Esc>kI<Tab>
-autocmd FileType tex inoremap :fl 	 \begin{flalign}<CR><Tab><CR><BS>\end{flalign}<Esc>kA<Space>
-autocmd FileType tex inoremap :fls 	 \begin{flalign*}<CR><Tab><CR><BS>\end{flalign*}<Esc>kA<Space>
-autocmd FileType tex inoremap :mp    \begin{minipage}{(<>)}<CR><Tab>(<>)<CR><BS>\end{minipage}<esc>2k
-autocmd FileType tex inoremap :fig   \begin{figure}[(<>)]<CR><Tab>\centering<CR>\includegraphics[(<>)]{(<>)}<CR>\caption{(<>)}<CR>\label{(<>)}<CR><BS>\end{figure}<Esc>5k
-autocmd FileType tex inoremap :fram  \begin{frame}{(<>)}<CR>\end{frame}<Esc>k
-autocmd FileType tex inoremap :txt   \text{}(<>)<Esc>4hi
-autocmd FileType tex inoremap :prf   \begin{proof}[\unskip\nopunct]<CR>\end{proof}<Esc>O
+autocmd FileType tex inoremap ;item  \begin{itemize}<Enter><Tab>\item<Enter><BS>\end{itemize}<Esc>kA<Space>
+autocmd FileType tex inoremap ;enum  \begin{enumerate}[(<>)]<Enter><Tab>\item (<>)<Enter><BS>\end{enumerate}<Esc>2k
+autocmd FileType tex inoremap ;eq 	 \begin{equation}<CR><CR>\end{equation}<Esc>kI<Tab>
+autocmd FileType tex inoremap ;eqs 	 \begin{equation*}<CR><Tab><CR><BS>\end{equation*}<Esc>kA<Space>
+autocmd FileType tex inoremap ;ga 	 \begin{gather}<CR><CR>\end{gather}<Esc>kI<Tab>
+autocmd FileType tex inoremap ;gas 	 \begin{gather*}<CR><CR>\end{gather*}<Esc>kI<Tab>
+autocmd FileType tex inoremap ;al 	 \begin{align}<CR><CR>\end{align}<Esc>kI<Tab>
+autocmd FileType tex inoremap ;als 	 \begin{align*}<CR><CR>\end{align*}<Esc>kI<Tab>
+autocmd FileType tex inoremap ;fl 	 \begin{flalign}<CR><Tab><CR><BS>\end{flalign}<Esc>kA<Space>
+autocmd FileType tex inoremap ;fls 	 \begin{flalign*}<CR><Tab><CR><BS>\end{flalign*}<Esc>kA<Space>
+autocmd FileType tex inoremap ;mp    \begin{minipage}{(<>)}<CR><Tab>(<>)<CR><BS>\end{minipage}<esc>2k
+autocmd FileType tex inoremap ;fig   \begin{figure}[(<>)]<CR><Tab>\centering<CR>\includegraphics[(<>)]{(<>)}<CR>\caption{(<>)}<CR>\label{(<>)}<CR><BS>\end{figure}<Esc>5k
+autocmd FileType tex inoremap ;fram  \begin{frame}{(<>)}<CR>\end{frame}<Esc>k
+autocmd FileType tex inoremap ;txt   \text{}(<>)<Esc>4hi
+autocmd FileType tex inoremap ;prf   \begin{proof}[\unskip\nopunct]<CR>\end{proof}<Esc>O
 
 " -- Operators --
 
-autocmd FileType tex inoremap :abs 	 \abs{}(<>)<Esc>4hi
-autocmd FileType tex inoremap :mat 	 \mat{<Enter><Enter>}(<>)<Esc>ki
-autocmd FileType tex inoremap	:innr  \inner{  }{ (<>) }(<>)<Esc>13hi
-autocmd FileType tex inoremap :exp   \left\langle  \left\lvert (<>) \right\rvert (<>) \right\rangle(<>)<Esc>52hi
-autocmd FileType tex inoremap	:bf 	 \textbf{}(<>)<Esc>4hi
-autocmd FileType tex inoremap :ital	 \textit{}(<>)<Esc>4hi
-autocmd FileType tex inoremap :bs 	 \boldsymbol{}(<>)<Esc>4hi
-autocmd FileType tex inoremap :frac  \frac{}{(<>)}(<>)<Esc>10hi
-autocmd FileType tex inoremap :ml    \mathlarger{}(<>)<Esc>4hi
-autocmd FileType tex inoremap :ms    \mathsmaller{}(<>)<Esc>4hi
-autocmd FileType tex inoremap :[]    \left[  \right](<>)<Esc>11hi
-autocmd FileType tex inoremap :{}    \left{  \right}(<>)<Esc>11hi
-autocmd FileType tex inoremap :()    \left(  \right)(<>)<Esc>11hi
-autocmd FileType tex inoremap :si    \SI{}{(<>)}(<>)<Esc>10hi
+autocmd FileType tex inoremap ;abs 	 \abs{}(<>)<Esc>4hi
+autocmd FileType tex inoremap ;mat 	 \mat{<Enter><Enter>}(<>)<Esc>ki
+autocmd FileType tex inoremap	;innr  \inner{  }{ (<>) }(<>)<Esc>13hi
+autocmd FileType tex inoremap ;exp   \left\langle  \left\lvert (<>) \right\rvert (<>) \right\rangle(<>)<Esc>52hi
+autocmd FileType tex inoremap	;bf 	 \textbf{}(<>)<Esc>4hi
+autocmd FileType tex inoremap ;ital	 \textit{}(<>)<Esc>4hi
+autocmd FileType tex inoremap ;bs 	 \boldsymbol{}(<>)<Esc>4hi
+autocmd FileType tex inoremap ;frac  \frac{}{(<>)}(<>)<Esc>10hi
+autocmd FileType tex inoremap ;ml    \mathlarger{}(<>)<Esc>4hi
+autocmd FileType tex inoremap ;ms    \mathsmaller{}(<>)<Esc>4hi
+autocmd FileType tex inoremap ;[]    \left[  \right](<>)<Esc>11hi
+autocmd FileType tex inoremap ;{}    \left{  \right}(<>)<Esc>11hi
+autocmd FileType tex inoremap ;()    \left(  \right)(<>)<Esc>11hi
+autocmd FileType tex inoremap ;si    \SI{}{(<>)}(<>)<Esc>10hi
